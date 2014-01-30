@@ -1,0 +1,23 @@
+{
+	"installed_packages":
+	[
+		"ApacheConf.tmLanguage",
+		"Case Conversion",
+		"DevDocs",
+		"DocBlockr",
+		"EditorConfig",
+		"FavoriteFiles",
+		"Git Config",
+		"hosts",
+		"INI",
+		"Laravel Blade Highlighter",
+		"Modific",
+		"Puppet",
+		"SCSS",
+		"SFTP",
+		"sublime-github",
+		"SublimeGit",
+		"Theme - Soda",
+		"Themr"
+	]
+}

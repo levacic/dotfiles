@@ -1,0 +1,13 @@
+[user]
+	name = Milos Levacic
+	email = milos@levacic.net
+[color]
+	ui = true
+[core]
+	editor = subl -w
+[push]
+	default = simple
+[gitflow "feature.finish"]
+	no-ff = true
+[cola]
+	savewindowsettings = true

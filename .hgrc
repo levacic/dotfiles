@@ -1,0 +1,6 @@
+[ui]
+username = Milos Levacic <milos@levacic.net>
+ssh = ssh -C
+
+[extensions]
+color =
