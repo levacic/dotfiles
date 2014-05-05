@@ -24,5 +24,14 @@
     { "keys": ["ctrl+alt+c", "ctrl+alt+d"], "command": "convert_to_dot"},
     { "keys": ["ctrl+alt+c", "ctrl+alt+h"], "command": "convert_to_dash"},
     { "keys": ["ctrl+alt+c", "ctrl+alt+w"], "command": "convert_to_separate_words"},
-    { "keys": ["ctrl+alt+c", "ctrl+alt+/"], "command": "convert_to_slash"}
+    { "keys": ["ctrl+alt+c", "ctrl+alt+/"], "command": "convert_to_slash"},
+
+    /**
+     * DocBlockr bindings.
+     */
+    { "keys": ["shift+alt+r"], "command": "jsdocs_reparse",
+      "context": [
+          { "key": "selector", "operator": "equal", "operand": "comment.block" }
+      ]
+    },
 ]

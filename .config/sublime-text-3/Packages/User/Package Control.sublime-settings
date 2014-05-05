@@ -8,6 +8,7 @@
 		"EditorConfig",
 		"FavoriteFiles",
 		"Git Config",
+		"Handlebars",
 		"hosts",
 		"INI",
 		"Laravel Blade Highlighter",
@@ -15,8 +16,13 @@
 		"Puppet",
 		"SCSS",
 		"SFTP",
+		"SideBarEnhancements",
 		"sublime-github",
 		"SublimeGit",
+		"SublimeLinter",
+		"SublimeLinter-jscs",
+		"SublimeLinter-jshint",
+		"SublimeLinter-php",
 		"Theme - Soda",
 		"Themr"
 	]
