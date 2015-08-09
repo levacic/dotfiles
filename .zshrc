@@ -53,7 +53,10 @@ plugins=(git git-flow-avh colored-man vagrant)
 
 # User configuration
 
+# Path configuration
 export PATH="/usr/local/heroku/bin:/home/levacic/.cabal/bin:/home/levacic/.rvm/gems/ruby-1.9.3-p484/bin:/home/levacic/.rvm/gems/ruby-1.9.3-p484@global/bin:/home/levacic/.rvm/rubies/ruby-1.9.3-p484/bin:/home/levacic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/levacic/.rvm/bin:/home/levacic/.local/bin"
+
+# Manuals
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source "${ZSH}/oh-my-zsh.sh"
