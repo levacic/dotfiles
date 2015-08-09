@@ -53,8 +53,31 @@ plugins=(git git-flow-avh colored-man vagrant)
 
 # User configuration
 
-# Path configuration
-export PATH="/usr/local/heroku/bin:/home/levacic/.cabal/bin:/home/levacic/.rvm/gems/ruby-1.9.3-p484/bin:/home/levacic/.rvm/gems/ruby-1.9.3-p484@global/bin:/home/levacic/.rvm/rubies/ruby-1.9.3-p484/bin:/home/levacic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/levacic/.rvm/bin:/home/levacic/.local/bin"
+# Default path configuration - system programs
+export PATH="/usr/local/sbin"
+export PATH="${PATH}:/usr/local/bin"
+export PATH="${PATH}:/usr/sbin"
+export PATH="${PATH}:/usr/bin"
+export PATH="${PATH}:/sbin"
+export PATH="${PATH}:/bin"
+export PATH="${PATH}:/usr/local/games"
+export PATH="${PATH}:/usr/games"
+
+# User-installed programs should not override system programs
+export PATH="${PATH}:${HOME}/bin"
+export PATH="${PATH}:${HOME}/.local/bin"
+
+# Run them Rubies
+export PATH="${PATH}:${HOME}/.rvm/gems/ruby-1.9.3-p484/bin"
+export PATH="${PATH}:${HOME}/.rvm/gems/ruby-1.9.3-p484@global/bin"
+export PATH="${PATH}:${HOME}/.rvm/rubies/ruby-1.9.3-p484/bin"
+export PATH="${PATH}:${HOME}/.rvm/bin"
+
+# Cabal programs
+export PATH="${PATH}:${HOME}/.cabal/bin"
+
+# Heroku
+export PATH="${PATH}:/usr/local/heroku/bin"
 
 # Manuals
 # export MANPATH="/usr/local/man:$MANPATH"
