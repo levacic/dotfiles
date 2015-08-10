@@ -9,5 +9,7 @@
 	default = simple
 [gitflow "feature.finish"]
 	no-ff = true
+[gitflow "release.finish"]
+	nobackmerge = true
 [cola]
 	savewindowsettings = true
