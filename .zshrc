@@ -71,7 +71,6 @@ export PATH="${PATH}:${HOME}/.local/bin"
 export PATH="${PATH}:${HOME}/.rvm/gems/ruby-1.9.3-p484/bin"
 export PATH="${PATH}:${HOME}/.rvm/gems/ruby-1.9.3-p484@global/bin"
 export PATH="${PATH}:${HOME}/.rvm/rubies/ruby-1.9.3-p484/bin"
-export PATH="${PATH}:${HOME}/.rvm/bin"
 
 # Cabal programs
 export PATH="${PATH}:${HOME}/.cabal/bin"
