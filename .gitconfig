@@ -6,7 +6,7 @@
 [core]
 	editor = subl -w
 [push]
-	default = simple
+	default = current
 [gitflow "feature.finish"]
 	no-ff = true
 [gitflow "release.finish"]
