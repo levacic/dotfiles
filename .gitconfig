@@ -13,3 +13,6 @@
 	nobackmerge = true
 [cola]
 	savewindowsettings = true
+
+[http]
+	postBuffer = 1048576000
