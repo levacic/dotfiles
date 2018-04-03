@@ -49,7 +49,7 @@ ZSH_CUSTOM="${HOME}/.oh-my-zsh-customizations"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow-avh colored-man catimg vagrant)
+plugins=(git git-flow-avh colored-man catimg vagrant zsh-syntax-highlighting)
 
 # User configuration
 
