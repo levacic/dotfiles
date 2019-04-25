@@ -53,6 +53,9 @@ plugins=(git git-flow-avh colored-man-pages catimg vagrant zsh-autosuggestions z
 
 # User configuration
 
+# Go path configuration
+export GOPATH="${HOME}/.go"
+
 # Default path configuration - system programs
 export PATH="/usr/local/sbin"
 export PATH="${PATH}:/usr/local/bin"
@@ -72,6 +75,9 @@ export PATH="${PATH}:${HOME}/.cabal/bin"
 
 # Heroku
 export PATH="${PATH}:/usr/local/heroku/bin"
+
+# Go
+export PATH="${PATH}:${GOPATH}/bin"
 
 # Manuals
 # export MANPATH="/usr/local/man:$MANPATH"
