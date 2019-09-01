@@ -13,6 +13,12 @@
 	nobackmerge = true
 [cola]
 	savewindowsettings = true
+	textwidth = 80
+	tabwidth = 4
+	boldheaders = false
+	spellcheck = false
+	theme = flat-dark-grey
+	icontheme = dark
 
 [http]
 	postBuffer = 1048576000
