@@ -79,6 +79,9 @@ export PATH="${PATH}:/usr/local/heroku/bin"
 # Go
 export PATH="${PATH}:${GOPATH}/bin"
 
+# Yarn
+export PATH="${PATH}:${HOME}/.yarn/bin"
+
 # Manuals
 # export MANPATH="/usr/local/man:$MANPATH"
 
