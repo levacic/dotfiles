@@ -2,7 +2,7 @@
 
 ## Installation
 
-To install, clone this repo somewhere like `~/dotfiles`. After that, make the following symlinks (back them up by hand first if needed):
+To install, clone this repo somewhere like `~/dotfiles`, with the `--recurse-submodules` option. After that, make the following symlinks (back them up by hand first if needed):
 
 ```sh
 ln -s "${HOME}/dotfiles/.bash-customizations"
