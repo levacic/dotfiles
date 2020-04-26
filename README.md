@@ -13,6 +13,7 @@ ln -s "${HOME}/dotfiles/.bashrc"
 ln -s "${HOME}/dotfiles/.gitconfig"
 ln -s "${HOME}/dotfiles/.hgrc"
 ln -s "${HOME}/dotfiles/.zshrc"
+ln -s "${HOME}/dotfiles/bin/force-google-chrome-dark-mode.sh" "${HOME}/bin/force-google-chrome-dark-mode"
 ```
 
 Not sure about the `.cinnamon` thing, it's here for historical reasons until it gets deleted.
