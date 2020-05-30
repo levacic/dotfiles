@@ -6,14 +6,13 @@ To install, clone this repo to `~/dotfiles`, with the `--recurse-submodules` opt
 
 If you really need to use a different path, then instead of symlinking `.bashrc` and `.zshrc`, manually edit their contents to configure a different `DOTFILES` environment variable (with the value being the path to the cloned repo), and then source `${DOTFILES}/.bashrc` or `{$DOTFILES}/.zshrc` as necessary.
 
-Remove (or backup manually if needed) any default login scripts, especially `~/.profile` if it exists - we **do not want** this, as it gets executed for both Bash and Zsh login shells, whereas we want to isolate these to initialize differently.
-
-After that, make the following symlinks for the base shell configuration:
+After that, make the following symlinks for the base shell configuration (if needed, manually back up the original files first):
 
 ```sh
 ln -s "${HOME}/dotfiles/.bash_logout"
 ln -s "${HOME}/dotfiles/.bash_profile"
 ln -s "${HOME}/dotfiles/.bashrc"
+ln -s "${HOME}/dotfiles/.profile"
 ln -s "${HOME}/dotfiles/.zshrc"
 ```
 
