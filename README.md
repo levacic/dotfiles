@@ -4,7 +4,7 @@
 
 To install, clone this repo to `~/dotfiles`, with the `--recurse-submodules` option. This path is now hardcoded because why not.
 
-If you really need to use a different path, then instead of symlinking `.bashrc` and `.zshrc`, manually edit their contents to configure a different `DOTFILES` environment variable (with the value being the path to the cloned repo), and then source `${DOTFILES}/.bashrc` or `{$DOTFILES}/.zshrc` as necessary.
+If you really need to use a different path, then instead of symlinking `.profile`, `.bashrc`, and `.zshrc`, manually edit their contents to configure a different `DOTFILES` environment variable (with the value being the path to the cloned repo), and then source `${DOTFILES}/.profile`, `${DOTFILES}/.bashrc`, or `{$DOTFILES}/.zshrc` as necessary.
 
 After that, make the following symlinks for the base shell configuration (if needed, manually back up the original files first):
 
