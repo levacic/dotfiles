@@ -46,7 +46,7 @@ ZSH_THEME="ys"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM="${HOME}/.oh-my-zsh-customizations"
+ZSH_CUSTOM="${DOTFILES}/oh-my-zsh"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
