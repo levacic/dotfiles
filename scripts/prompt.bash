@@ -1,9 +1,4 @@
-# Git prompt configuration
-export GIT_PS1_SHOWDIRTYSTATE="1"
-export GIT_PS1_SHOWSTASHSTATE="1"
-export GIT_PS1_SHOWUNTRACKEDFILES="1"
-
-# PS1 prompt configuration
+# Prompt configuration
 PS1=""
 PS1+="\n" # Always start the prompt in a new line
 PS1+="\[\033[01;37m\][\$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]\342\234\223\"; else echo \"\[\033[01;31m\]\342\234\227\"; fi)\[\033[1;37m\]] " # Add the execution status of the last command

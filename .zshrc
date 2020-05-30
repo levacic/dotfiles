@@ -72,6 +72,12 @@ fi
 
 source "${ZSH}/oh-my-zsh.sh"
 
+# Build up our Zsh configuration from individual modules. We're doing this after
+# loading oh-my-zsh on purpose, so we can override stuff if necessary.
+for f in "${DOTFILES}/scripts/"*.{sh,zsh}; do
+    source "${f}"
+done
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 

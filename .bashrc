@@ -6,5 +6,7 @@ if [[ -e "${DOTFILES}/basepath.sh" ]]; then
     source "${DOTFILES}/basepath.sh"
 fi
 
-# Build up our Bash configuration from individual modules
-for f in ~/.bash-customizations/*; do source "${f}"; done
+# Build up our Bash configuration from individual modules.
+for f in "${DOTFILES}/scripts/"*.{sh,bash}; do
+    source "${f}"
+done

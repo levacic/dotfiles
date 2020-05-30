@@ -6,5 +6,5 @@ export HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # For setting history length see HISTSIZE and HISTFILESIZE in bash(1),
-export HISTSIZE=1000
-export HISTFILESIZE=2000
+export HISTSIZE=50000
+export HISTFILESIZE=60000
