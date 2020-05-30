@@ -52,10 +52,7 @@ ZSH_CUSTOM="${HOME}/.oh-my-zsh-customizations"
 plugins=(
     catimg
     colored-man-pages
-    git
-    git-flow-avh
     gitfast
-    vagrant
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
