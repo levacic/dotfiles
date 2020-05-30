@@ -1,5 +1,7 @@
 # Configure dotfiles path.
-export DOTFILES="${HOME}/dotfiles"
+if [[ ! -v DOTFILES ]]; then
+    export DOTFILES="${HOME}/dotfiles"
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"

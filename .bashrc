@@ -1,5 +1,7 @@
 # Configure dotfiles path.
-export DOTFILES="${HOME}/dotfiles"
+if [[ ! -v DOTFILES ]]; then
+    export DOTFILES="${HOME}/dotfiles"
+fi
 
 # Import base path configuration before anything else.
 if [[ -e "${DOTFILES}/basepath.sh" ]]; then
