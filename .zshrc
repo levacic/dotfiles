@@ -62,34 +62,10 @@ plugins=(
 
 # User configuration
 
-# Go path configuration
-export GOPATH="${HOME}/.go"
-
-# Default path configuration - system programs
-export PATH="/usr/local/sbin"
-export PATH="${PATH}:/usr/local/bin"
-export PATH="${PATH}:/usr/sbin"
-export PATH="${PATH}:/usr/bin"
-export PATH="${PATH}:/sbin"
-export PATH="${PATH}:/bin"
-export PATH="${PATH}:/usr/local/games"
-export PATH="${PATH}:/usr/games"
-
-# User-installed programs should not override system programs
-export PATH="${PATH}:${HOME}/bin"
-export PATH="${PATH}:${HOME}/.local/bin"
-
-# Cabal programs
-export PATH="${PATH}:${HOME}/.cabal/bin"
-
-# Heroku
-export PATH="${PATH}:/usr/local/heroku/bin"
-
-# Go
-export PATH="${PATH}:${GOPATH}/bin"
-
-# Yarn
-export PATH="${PATH}:${HOME}/.yarn/bin"
+# Import base path configuration before anything else.
+if [[ -e "${DOTFILES}/basepath.sh" ]]; then
+    source "${DOTFILES}/basepath.sh"
+fi
 
 # Manuals
 # export MANPATH="/usr/local/man:$MANPATH"
