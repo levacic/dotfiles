@@ -20,6 +20,7 @@
     spellcheck = false
     theme = flat-dark-grey
     icontheme = dark
+    fontdiff = Inconsolata,12,-1,5,50,0,0,0,0,0
 
 [http]
     postBuffer = 1048576000
