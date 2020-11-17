@@ -57,6 +57,8 @@ ZSH_CUSTOM="${DOTFILES}/oh-my-zsh"
 plugins=(
     catimg
     colored-man-pages
+    docker
+    docker-compose
     gitfast
     zsh-autosuggestions
     zsh-syntax-highlighting
