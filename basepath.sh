@@ -175,5 +175,5 @@ GOPATH=""
 +path.append "PATH" "/home/linuxbrew/.linuxbrew/bin"
 +path.append "PATH" "/home/linuxbrew/.linuxbrew/sbin"
 
-export GOPATH
 export PATH
+export GOPATH
