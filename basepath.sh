@@ -135,40 +135,40 @@ PATH=""
 # Default path configuration - system programs should always be first for
 # security purposes. This could all be a one-liner, in fact the whole file
 # could, but it's more readable and maintainable this way.
-PATH="${PATH}:/usr/local/sbin"
-PATH="${PATH}:/usr/local/bin"
-PATH="${PATH}:/usr/sbin"
-PATH="${PATH}:/usr/bin"
-PATH="${PATH}:/sbin"
-PATH="${PATH}:/bin"
-PATH="${PATH}:/usr/local/games"
-PATH="${PATH}:/usr/games"
++path.append "PATH" "/usr/local/sbin"
++path.append "PATH" "/usr/local/bin"
++path.append "PATH" "/usr/sbin"
++path.append "PATH" "/usr/bin"
++path.append "PATH" "/sbin"
++path.append "PATH" "/bin"
++path.append "PATH" "/usr/local/games"
++path.append "PATH" "/usr/games"
 
 # Dotfiles-bundled programs.
-PATH="${PATH}:${DOTFILES}/bin"
++path.append "PATH" "${DOTFILES}/bin"
 
 # User-installed programs.
-PATH="${PATH}:${HOME}/bin"
-PATH="${PATH}:${HOME}/.local/bin"
++path.append "PATH" "${HOME}/bin"
++path.append "PATH" "${HOME}/.local/bin"
 
 # Composer-installed programs.
-PATH="${PATH}:${HOME}/.composer/vendor/bin"
++path.append "PATH" "${HOME}/.composer/vendor/bin"
 
 # Yarn-installed programs.
-PATH="${PATH}:${HOME}/.yarn/bin"
++path.append "PATH" "${HOME}/.yarn/bin"
 
 # npm-installed programs.
-PATH="${PATH}:${HOME}/.npm/bin"
++path.append "PATH" "${HOME}/.npm/bin"
 
 # Heroku Toolbelt programs.
-PATH="${PATH}:/usr/local/heroku/bin"
++path.append "PATH" "/usr/local/heroku/bin"
 
 # Cabal-installed programs.
-PATH="${PATH}:${HOME}/.cabal/bin"
++path.append "PATH" "${HOME}/.cabal/bin"
 
 # Go path configuration and programs.
 GOPATH="${HOME}/.go"
-PATH="${PATH}:${GOPATH}/bin"
++path.append "PATH" "${GOPATH}/bin"
 
 export GOPATH
 export PATH
