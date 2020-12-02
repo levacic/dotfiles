@@ -131,6 +131,7 @@
 # This is a default path configuration which should be loaded before all the
 # other scripts, to make sure they have access to everything they might need.
 PATH=""
+GOPATH=""
 
 # Default path configuration - system programs should always be first for
 # security purposes. This could all be a one-liner, in fact the whole file
@@ -167,7 +168,7 @@ PATH=""
 +path.append "PATH" "${HOME}/.cabal/bin"
 
 # Go path configuration and programs.
-GOPATH="${HOME}/.go"
++path.append "GOPATH" "${HOME}/.go"
 +path.append "PATH" "${GOPATH}/bin"
 
 export GOPATH
