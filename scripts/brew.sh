@@ -2,5 +2,7 @@
 export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
 export HOMEBREW_CELLAR="/home/linuxbrew/.linuxbrew/Cellar"
 export HOMEBREW_REPOSITORY="/home/linuxbrew/.linuxbrew/Homebrew"
-export MANPATH="${MANPATH:+$MANPATH:}/home/linuxbrew/.linuxbrew/share/man"
-export INFOPATH="${INFOPATH:+$INFOPATH:}/home/linuxbrew/.linuxbrew/share/info"
+
+# Homebrew suggest also configuring `PATH`, `MANPATH`, and `INFOPATH`, but it
+# makes more sense to handle those in this project's `basepath.sh`, where all
+# the path configurations are centralized.

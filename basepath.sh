@@ -132,6 +132,8 @@
 # other scripts, to make sure they have access to everything they might need.
 PATH=""
 GOPATH=""
+MANPATH=""
+INFOPATH=""
 
 # Default path configuration - system programs should always be first for
 # security purposes. This could all be a one-liner, in fact the whole file
@@ -175,5 +177,19 @@ GOPATH=""
 +path.append "PATH" "/home/linuxbrew/.linuxbrew/bin"
 +path.append "PATH" "/home/linuxbrew/.linuxbrew/sbin"
 
+# Default MANPATH configuration.
++path.append "MANPATH" "/usr/share/man"
+
+# Add Homebrew to MANPATH.
++path.append "MANPATH" "/home/linuxbrew/.linuxbrew/share/man"
+
+# Default INFOPATH configuration.
++path.append "INFOPATH" "/usr/share/info"
+
+# Add Homebrew to INFOPATH
++path.append "INFOPATH" "/home/linuxbrew/.linuxbrew/share/info"
+
 export PATH
 export GOPATH
+export MANPATH
+export INFOPATH
