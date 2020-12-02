@@ -171,5 +171,9 @@ GOPATH=""
 +path.append "GOPATH" "${HOME}/.go"
 +path.append "PATH" "${GOPATH}/bin"
 
+# Homebrew.
++path.append "PATH" "/home/linuxbrew/.linuxbrew/bin"
++path.append "PATH" "/home/linuxbrew/.linuxbrew/sbin"
+
 export GOPATH
 export PATH
