@@ -28,7 +28,7 @@ ln -s "${HOME}/dotfiles/.vimrc"
 
 ## Organization
 
-All of the initialization scripts are located in the `shell` folder in the root of this repo, with the following naming conventions:
+All of the initialization scripts are located in the `scripts` folder in the root of this repo, with the following naming conventions:
 
 - `*.sh` files get sourced in both Bash and Zsh
 - `*.bash` files get sourced only in Bash
