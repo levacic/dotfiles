@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# When an output of a script is piped to this script, it will just prepend a
+# colored timestamp to each row of output from the original script.
+#
+# This makes it easy to track individual output progress on commands that might
+# take a longer time to execute.
+
+ruby -ne 'puts "\e[33m" + Time.now().strftime("%T.%L") + "\e[0m " + $_'
