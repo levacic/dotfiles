@@ -174,20 +174,32 @@ INFOPATH=""
 +path.append "PATH" "${GOPATH}/bin"
 
 # Homebrew.
-+path.append "PATH" "/home/linuxbrew/.linuxbrew/bin"
-+path.append "PATH" "/home/linuxbrew/.linuxbrew/sbin"
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    +path.append "PATH" "/home/linuxbrew/.linuxbrew/bin"
+    +path.append "PATH" "/home/linuxbrew/.linuxbrew/sbin"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # Do nothing on macOS.
+fi
 
 # Default MANPATH configuration.
 +path.append "MANPATH" "/usr/share/man"
 
 # Add Homebrew to MANPATH.
-+path.append "MANPATH" "/home/linuxbrew/.linuxbrew/share/man"
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    +path.append "MANPATH" "/home/linuxbrew/.linuxbrew/share/man"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # Do nothing on macOS.
+fi
 
 # Default INFOPATH configuration.
 +path.append "INFOPATH" "/usr/share/info"
 
 # Add Homebrew to INFOPATH
-+path.append "INFOPATH" "/home/linuxbrew/.linuxbrew/share/info"
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    +path.append "INFOPATH" "/home/linuxbrew/.linuxbrew/share/info"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # Do nothing on macOS.
+fi
 
 export PATH
 export GOPATH
