@@ -188,7 +188,7 @@ fi
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     +path.append "MANPATH" "/home/linuxbrew/.linuxbrew/share/man"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    # Do nothing on macOS.
+    +path.append "MANPATH" "/usr/local/share/man"
 fi
 
 # Default INFOPATH configuration.
@@ -198,7 +198,7 @@ fi
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     +path.append "INFOPATH" "/home/linuxbrew/.linuxbrew/share/info"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    # Do nothing on macOS.
+    +path.append "INFOPATH" "/usr/local/share/info"
 fi
 
 export PATH
