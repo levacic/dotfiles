@@ -185,7 +185,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     +path.append "PATH" "/home/linuxbrew/.linuxbrew/bin"
     +path.append "PATH" "/home/linuxbrew/.linuxbrew/sbin"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    # Do nothing on macOS.
+    +path.append "PATH" "/opt/homebrew/bin"
+    +path.append "PATH" "/opt/homebrew/sbin"
 fi
 
 # Default MANPATH configuration.
@@ -195,7 +196,7 @@ fi
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     +path.append "MANPATH" "/home/linuxbrew/.linuxbrew/share/man"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    +path.append "MANPATH" "/usr/local/share/man"
+    +path.append "MANPATH" "/opt/homebrew/share/man"
 fi
 
 # Default INFOPATH configuration.
@@ -205,7 +206,7 @@ fi
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     +path.append "INFOPATH" "/home/linuxbrew/.linuxbrew/share/info"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    +path.append "INFOPATH" "/usr/local/share/info"
+    +path.append "INFOPATH" "/opt/homebrew/share/info"
 fi
 
 export PATH
