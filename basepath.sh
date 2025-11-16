@@ -163,13 +163,6 @@ INFOPATH=""
 # npm-installed programs.
 +path.append "PATH" "${HOME}/.npm/bin"
 
-# Python 2.7-installed programs.
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    # Do nothing on Linux.
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-    +path.append "PATH" "${HOME}/Library/Python/2.7/bin"
-fi
-
 # Heroku Toolbelt programs.
 +path.append "PATH" "/usr/local/heroku/bin"
 
