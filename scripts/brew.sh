@@ -8,5 +8,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # makes more sense to handle those in this project's `basepath.sh`, where all
     # the path configurations are centralized.
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    # Do nothing on macOS.
+    export HOMEBREW_PREFIX="/opt/homebrew";
+    export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+    export HOMEBREW_REPOSITORY="/opt/homebrew";
 fi
